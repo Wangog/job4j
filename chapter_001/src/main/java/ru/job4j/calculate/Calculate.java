@@ -1,24 +1,23 @@
 package ru.job4j.calculate;
 /**
-*Class Calculate решение задачи 1.3. JavaDoc. Code convention
+*Class Calculate решение задачи 3.1 Элементарный клькулятор
 *@author shcherbakov
-*@since 11.01.2019
-*@version 1.1
+*@since 02.02.2019
+*@version 1.0
 */ 
 public class Calculate {
+	private double result;
 	/**
-	* Main.
-	*@param args - args
-	*/
-	public static void main(String[]args) {
-		System.out.println("Hello World");
+	 * Описываем аргументы first и second.
+	 * Опыисываем сложние аргументов.
+	 */
+	public void add(double first,double second){
+		this.result=first+second;
 	}
 	/**
-	*Method echo.
-	*@param name - summa.
-	*@return Echo plus summa.
+	*Выводим полученный результат.
 	*/
-	public String echo(String name) {
-		return "Echo, echo, echo:" + name;
+	public double getResult(){
+		return this.result;
 	}
 }

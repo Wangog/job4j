@@ -5,21 +5,22 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
-*Class CalculateTest решение задачи 1.4. JUnit
+*Class CalculateTest решение задачи 3.1. Элементарный калькулятор
 *@author shcherbakov
-*@since 12.01.2019
+*@since 02.02.2019
 *@version 1.0
 */ 
 public class CalculateTest {
 	/**
-	* Test echo.
+	* Test сложение.
 	*/
 	@Test
-	public void whenTakeNameThenThreeEchoPlusName() {
-		String input = "summa";
-		String expect = "Echo, echo, echo:summa";
+	public void whenAddOnePlusOneThenTwo() {
 		Calculate calc = new Calculate();
-		String result = calc.echo(input);
-		assertThat(result, is(expect));
+		calc.add(0,2);
+		double result=calc.getResult();
+		double expected=2;
+		assertThat(result,is(expected));
 	}
+
 }
