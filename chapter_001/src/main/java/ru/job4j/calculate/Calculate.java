@@ -3,7 +3,7 @@ package ru.job4j.calculate;
 *Class Calculate решение задачи 3.1 Элементарный клькулятор
 *@author shcherbakov
 *@since 05.02.2019
-*@version 1.0.2
+*@version 1.0.3
 */ 
 public class Calculate {
 	private double result;
@@ -15,11 +15,23 @@ public class Calculate {
 		this.result = first + second;
     }
     /**
+     *Выводим полученный результат сложения.
+     */
+    public double getResult() {
+        return this.result;
+    }
+    /**
      * Описываем аргументы three и four.
      * Опыисываем действия вычитания.
      */
     public void min(double three, double four) {
         this.result = three - four;
+    }
+    /**
+     *Выводим полученный результат вычитания.
+     */
+    public double getResultMin() {
+        return this.result;
     }
     /**
      * Описываем аргументы five и six.
@@ -29,16 +41,22 @@ public class Calculate {
         this.result = five * six;
     }
     /**
+     *Выводим полученный результат умножения.
+     */
+    public double getResultUmn() {
+        return this.result;
+    }
+    /**
      * Описываем аргументы seven и eight.
      * Опыисываем действия диления.
      */
     public void div(double seven, double eight) {
         this.result = seven / eight;
     }
-	/**
-	*Выводим полученный результат.
-	*/
-	public double getResult() {
-		return this.result;
-	}
+    /**
+     *Выводим полученный результат деления.
+     */
+    public double getResultDiv() {
+        return this.result;
+    }
 }
