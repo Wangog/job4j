@@ -7,8 +7,8 @@ import static org.junit.Assert.assertThat;
 /**
 *Class CalculateTest решение задачи 3.1. Элементарный калькулятор
 *@author shcherbakov
-*@since 02.02.2019
-*@version 1.0.1
+*@since 05.02.2019
+*@version 1.0.2
 */ 
 public class CalculateTest {
 	/**
@@ -30,7 +30,7 @@ public class CalculateTest {
 		Calculate calc = new Calculate();
 		calc.add(2, 1);
 		double result = calc.getResult();
-		double expected = 2;
+		double expected = 3;
 		assertThat(result, is(expected));
 	}
 	/**
