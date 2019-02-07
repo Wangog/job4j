@@ -7,8 +7,8 @@ import static org.junit.Assert.assertThat;
 /**
 *Class CalculateTest решение задачи 3.1. Элементарный калькулятор
 *@author shcherbakov
-*@since 05.02.2019
-*@version 1.0.3
+*@since 07.02.2019
+*@version 1.0.4
 */ 
 public class CalculateTest {
 	/**
@@ -19,7 +19,7 @@ public class CalculateTest {
 		Calculate calc = new Calculate();
 		calc.add(1, 1);
 		double result = calc.getResult();
-		double expected = 1;
+		double expected = 2;
 		assertThat(result, is(expected));
 	}
 	/**
@@ -29,7 +29,7 @@ public class CalculateTest {
 	public void whenTwoSubtractOneThenOne() {
 		Calculate calc = new Calculate();
 		calc.add(2, 1);
-		double result = calc.getResultMin();
+		double result = calc.getResult();
 		double expected = 3;
 		assertThat(result, is(expected));
 	}
@@ -40,8 +40,8 @@ public class CalculateTest {
 	public void whenMultipleTwoOnTwoThenOne() {
 		Calculate calc = new Calculate();
 		calc.add(2, 2);
-		double result = calc.getResultUmn();
-		double expected = 1;
+		double result = calc.getResult();
+		double expected = 4;
 		assertThat(result, is(expected));
 	}
 	/**
@@ -51,8 +51,8 @@ public class CalculateTest {
 	public void whenDivTwoOnTwoThenOne() {
 		Calculate calc = new Calculate();
 		calc.add(2, 2);
-		double result = calc.getResultDiv();
-		double expected = 1;
+		double result = calc.getResult();
+		double expected = 4;
 		assertThat(result, is(expected));
 	}
 
