@@ -17,42 +17,42 @@ public class CalculateTest {
 	@Test
 	public void whenAddOnePlusOneThenTwo() {
 		Calculate calc = new Calculate();
-		calc.add(1, 1);
+		calc.add(1D, 1D);
 		double result = calc.getResult();
-		double expected = 2;
+		double expected = 2D;
 		assertThat(result, is(expected));
 	}
 	/**
 	 * Test вычитание.
 	 */
 	@Test
-	public void whenTwoSubtractOneThenOne() {
+	public void whenSubtractOneToOneThenZero() {
 		Calculate calc = new Calculate();
-		calc.add(2, 1);
+		calc.subtract(1D, 1D);
 		double result = calc.getResult();
-		double expected = 3;
+		double expected = 0D;
 		assertThat(result, is(expected));
 	}
 	/**
 	 * Test умножение.
 	 */
 	@Test
-	public void whenMultipleTwoOnTwoThenOne() {
+	public void whenMultipleTwoToTheeThenSix() {
 		Calculate calc = new Calculate();
-		calc.add(2, 2);
+		calc.multiple(2D, 3D);
 		double result = calc.getResult();
-		double expected = 4;
+		double expected = 6D;
 		assertThat(result, is(expected));
 	}
 	/**
 	 * Test деление.
 	 */
 	@Test
-	public void whenDivTwoOnTwoThenOne() {
+	public void whenDivOneToOneThenOne() {
 		Calculate calc = new Calculate();
-		calc.add(2, 2);
+		calc.div(1D, 1D);
 		double result = calc.getResult();
-		double expected = 4;
+		double expected = 1D;
 		assertThat(result, is(expected));
 	}
 
