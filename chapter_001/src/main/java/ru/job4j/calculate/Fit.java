@@ -1,10 +1,10 @@
-package ru.job4j.calculator;
+package ru.job4j.calculate;
 
 /**
  *Class Fit решение задачи 3.3. Идеальный вес
  *@author shcherbakov
  *@since 02.03.2019
- *@version 1.0.0
+ *@version 1.0.1
  */
 public class Fit {
     /**
@@ -13,7 +13,7 @@ public class Fit {
      * @return идеальный вес.
      */
     public double manWeight(double height) {
-        return = (height - 100) · 1,15;
+        return (height - 100) * 1.15;
     }
     /**
      * Идеальный вес для женщины.
@@ -21,6 +21,6 @@ public class Fit {
      * @return идеальный вес.
      */
     public double womanWeight(double height) {
-        return = (height - 110) · 1,15;
+        return (height - 110) * 1.15;
     }
 }

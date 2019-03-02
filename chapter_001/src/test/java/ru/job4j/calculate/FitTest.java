@@ -1,4 +1,4 @@
-package ru.job4j.calculator;
+package ru.job4j.calculate;
 
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import static org.junit.Assert.assertThat;
  *Class FitTest решение задачи 3.3. Идеальный вес
  *@author shcherbakov
  *@since 02.03.2019
- *@version 1.0.0
+ *@version 1.0.1
  */
 public class FitTest {
 
