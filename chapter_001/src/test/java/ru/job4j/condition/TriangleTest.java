@@ -2,15 +2,16 @@ package ru.job4j.condition;
 /**
  *Class Triangle решение задачи 4.3. Вычисление площади треугольника
  *@author shcherbakov
- *@since 12.04.2019
- *@version 1.0.0
+ *@since 13.04.2019
+ *@version 1.0.1
  */
 
+import org.junit.Ignore;
 import org.junit.Test;
+import org.junit.experimental.categories.Categories;
 
 import static org.hamcrest.number.IsCloseTo.closeTo;
 import static org.junit.Assert.*;
-
 
 public class TriangleTest {
     @Test

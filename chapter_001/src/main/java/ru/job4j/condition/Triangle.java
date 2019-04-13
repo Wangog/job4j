@@ -1,9 +1,10 @@
 package ru.job4j.condition;
+
 /**
  *Class Triangle решение задачи 4.3. Вычисление площади треугольника
  *@author shcherbakov
- *@since 12.04.2019
- *@version 1.0.0
+ *@since 13.04.2019
+ *@version 1.0.1
  */
 
 public class Triangle {
@@ -21,7 +22,7 @@ public class Triangle {
      * @return Периметр.
      */
     public double period(double a, double b, double c) {
-        return (a + b + c)/2;
+        return (a + b + c) / 2;
     }
 
     /**
@@ -43,7 +44,7 @@ public class Triangle {
         double p = period(a, b, c);
         if (this.exist(a, b, c)) {
             // написать формулу для расчета площади треугольника.
-            rsl = Math.sqrt(p *(p - a) * (p - b) * (p - c));
+            rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
         return rsl;
     }
@@ -59,6 +60,6 @@ public class Triangle {
      * @return
      */
     private boolean exist(double a, double c, double b) {
-        return false;
+        return (a < b + c) && (b < a + c) && (c < a + b);
     }
 }
