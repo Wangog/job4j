@@ -3,7 +3,7 @@ import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
 /**
- *Class Board решение задачи 5.3. Построить шахматную доску в псевдографики
+ *Class BoardTest решение задачи 5.3. Построить шахматную доску в псевдографики
  *@author shcherbakov
  *@since 21.07.2019
  *@version 1.0.0
@@ -19,9 +19,8 @@ public class BoardTest {
                 )
         );
     }
-}
-
-    public void when5x4() {
+     @Test
+     public void when5x4() {
         Board board = new Board();
         String rsl = board.paint(5, 4);
         String ln = System.lineSeparator();

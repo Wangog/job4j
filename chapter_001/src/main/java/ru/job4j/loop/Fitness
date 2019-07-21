@@ -1,0 +1,14 @@
+package ru.job4j.loop;
+/**
+ *Class Fitness решение задачи 5.3. Построить шахматную доску в псевдографики
+ *@author shcherbakov
+ *@since 21.07.2019
+ *@version 1.0.0
+ */
+
+public class Fitness {
+    public int calc(int ivan, int nik) {
+        int month = 0;
+        return month;
+    }
+}
