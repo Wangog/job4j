@@ -2,7 +2,7 @@
 /**
  *Class PrimeNumber решение задачи 5.5. Простые числа
  *@author shcherbakov
- *@since 25.07.2019
+ *@since 30.07.2019
  *@version 1.0.0
  */
 
