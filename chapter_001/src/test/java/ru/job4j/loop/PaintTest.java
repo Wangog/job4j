@@ -6,9 +6,9 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.*;
 
 /**
- *Class PaintTest решение задачи 5.4. Построить пирамиду в псевдографике
+ *Class PaintTest решение задачи 5.5. Рефакторинг кода
  *@author shcherbakov
- *@since 30.07.2019
+ *@since 06.07.2019
  *@version 1.0.0
  */
 public class PaintTest {
