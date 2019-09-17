@@ -3,7 +3,7 @@ package ru.job4j.array;
  *Class FindLoop решение задачи 6.1. Классический поиск перебором.
  *@author shcherbakov
  *@since 17.09.2019
- *@version 1.0.0
+ *@version 1.0.1
  */
 
 public class FindLoop {
