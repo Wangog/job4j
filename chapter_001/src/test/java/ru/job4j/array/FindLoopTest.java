@@ -22,19 +22,19 @@ public class FindLoopTest {
     }
     @Test //поиск конца масива
     public void whenArrayHas7ThisEndArray() {
-        FindLoop find = new FindLoop();
+        FindLoop findend = new FindLoop();
         int[] input = new int[] {9, 4, 7};
         int value = 7;
-        int result = find.indexOf(input, value);
+        int result = findend.indexOf(input, value);
         int expect = 0;
         assertThat(result, is(expect));
     }
     @Test //поиск числа которого нет в масиве
     public void whenArrayNotHave7() {
-        FindLoop find = new FindLoop();
+        FindLoop findnot = new FindLoop();
         int[] input = new int[] {5, 10, 3};
         int value = 4;
-        int result = find.indexOf(input, value);
+        int result = findnot.indexOf(input, value);
         int expect = 0;
         assertThat(result, is(expect));
     }
