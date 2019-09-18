@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class FindLoopTest решение задачи 6.1. Классический поиск перебором.
  *@author shcherbakov
- *@since 17.09.2019
- *@version 1.0.1
+ *@since 18.09.2019
+ *@version 1.0.2
  */
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
@@ -23,10 +23,10 @@ public class FindLoopTest {
     @Test //поиск конца масива
     public void whenArrayHas7ThisEndArray() {
         FindLoop findend = new FindLoop();
-        int[] input = new int[] {9, 4, 7};
+        int[] input = new int[] {3, 4, 7};
         int value = 7;
         int result = findend.indexOf(input, value);
-        int expect = 0;
+        int expect = 2;
         assertThat(result, is(expect));
     }
     @Test //поиск числа которого нет в масиве
@@ -35,7 +35,7 @@ public class FindLoopTest {
         int[] input = new int[] {5, 10, 3};
         int value = 4;
         int result = findnot.indexOf(input, value);
-        int expect = 0;
+        int expect = -1;
         assertThat(result, is(expect));
     }
 }
