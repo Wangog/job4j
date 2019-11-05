@@ -11,7 +11,7 @@ public class ArrayChar {
     public static boolean startsWith(char[] word, char[] pref) {
         boolean result = true;
         for (int i = 0; i < word.length; i++) {
-            if (word[i] != pref[i]);
+            if (word[1] != pref[1])
             result = false;
         }
         return result;
