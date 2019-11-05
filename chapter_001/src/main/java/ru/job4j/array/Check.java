@@ -2,17 +2,16 @@ package ru.job4j.array;
 /**
  *Class Turn решение задачи 6.3. Массив заполнен true или false.
  *@author shcherbakov
- *@since 02.11.2019
- *@version 1.0.1
+ *@since 05.11.2019
+ *@version 1.0.2
  */
 
 public class Check {
     public boolean mono(boolean[] data) {
-        boolean result = true; // в задаче тут указано FALSE, получение положительного решения не поменяв значения у меня не вышло
-        int i = 0;
-        boolean temp = data[i]; //как обойтись без ввода дополнительной переменной булиан?
+        boolean result = true;
+        int i = 1; //Цыкл пускаю с 1 индекса
         for (; i < data.length; i++) {
-            if (data[i] != temp) {
+            if (data[i] != data[0]) {
                 result = false;
             }
         }

@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class Turn решение задачи 6.3. Массив заполнен true или false.
  *@author shcherbakov
- *@since 02.11.2019
- *@version 1.0.1
+ *@since 05.11.2019
+ *@version 1.0.2
  */
 
 import org.junit.Test;
@@ -30,6 +30,13 @@ public class CheckTest {
     public void whenDataNotMonoByFalseThenTrue() {
         Check check = new Check();
         boolean[] input = new boolean[] {false, false, false};
+        boolean result = check.mono(input);
+        assertThat(result, is(true));
+    }
+    @Test
+    public void whenDataNotMonoByFalseThenTrue() {
+        Check check = new Check();
+        boolean[] input = new boolean[]{false, false, false};
         boolean result = check.mono(input);
         assertThat(result, is(true));
     }
