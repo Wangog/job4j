@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class Turn решение задачи 6.4. Слово начинается с ....
  *@author shcherbakov
- *@since 02.11.2019
- *@version 1.0.0
+ *@since 11.11.2019
+ *@version 1.0.1
  */
 
 import org.junit.Test;
