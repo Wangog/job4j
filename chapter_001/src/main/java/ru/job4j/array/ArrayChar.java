@@ -1,6 +1,6 @@
 package ru.job4j.array;
 /**
- *Class Turn решение задачи 6.4. Слово начинается с ....
+ *Class ArrayChar решение задачи 6.4. Слово начинается с ....
  *@author shcherbakov
  *@since 16.11.2019
  *@version 1.0.2
