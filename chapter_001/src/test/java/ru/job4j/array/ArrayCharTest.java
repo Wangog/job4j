@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class Turn решение задачи 6.4. Слово начинается с ....
  *@author shcherbakov
- *@since 11.11.2019
- *@version 1.0.1
+ *@since 16.11.2019
+ *@version 1.0.2
  */
 
 import org.junit.Test;
@@ -23,7 +23,7 @@ public class ArrayCharTest {
     public void whenNotStartWithPrefixThenFalse() {
         char[] word = {'H', 'e', 'l', 'l', 'o'};
         char[] pref = {'H', 'i'};
-        boolean result =ArrayChar.startsWith(word, pref);
+        boolean result = ArrayChar.startsWith(word, pref);
         assertThat(result, is(false));
     }
 }
