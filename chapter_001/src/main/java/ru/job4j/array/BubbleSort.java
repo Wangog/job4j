@@ -2,23 +2,25 @@ package ru.job4j.array;
 /**
  *Class BubbleSort решение задачи 6.5. Создать программу для сортировки массива методом перестановки.
  *@author shcherbakov
- *@since 16.11.2019
- *@version 1.0.0
+ *@since 07.12.2019
+ *@version 1.0.2
  */
 
 public class BubbleSort {
-    public int sort(int[] array) {
-        int result;
-        for (int i = array.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-              if (array[j] > array[j + 1]) {
-                int tmp = array[j];
-                array[j] = array[j + 1];
-                array[j + 1] = tmp;
-                result = tmp;
-              }
+    public static void bubbleSort(int[] array) {
+        int i;
+        boolean flag = true;   // устанавливаем наш флаг в true для первого прохода по массиву
+        int temp;   // вспомогательная переменная
+        while (flag) { //Всегда используем для пузырька while?
+            flag = false;    // устанавливаем флаг в false в ожидании возможной замены местами
+            for (i = 0; i < array.length - 1; i++) {
+                if (array[i] > array[i + 1]) { // измените на < для сортировки по убыванию
+                    temp = array[i];         // меняем элементы местами
+                    array[i] = array[i + 1];
+                    array[i + 1] = temp;
+                    flag = true;  // true означает, что замена местами была проведена
+                }
             }
         }
-        return result;
     }
 }
