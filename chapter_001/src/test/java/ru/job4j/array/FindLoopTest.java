@@ -1,9 +1,9 @@
 package ru.job4j.array;
 /**
- *Class FindLoopTest решение задачи 6.1. Классический поиск перебором.
+ *Class FindLoopTest решение задачи 6.5. Поиск индекса в диапазоне.
  *@author shcherbakov
- *@since 18.09.2019
- *@version 1.0.2
+ *@since 07.12.2019
+ *@version 1.0.0
  */
 import org.junit.Test;
 import static org.hamcrest.core.Is.is;
@@ -36,6 +36,36 @@ public class FindLoopTest {
         int value = 4;
         int result = findnot.indexOf(input, value);
         int expect = -1;
+        assertThat(result, is(expect));
+    }
+    @Test
+    public void whenFind3() {
+        int[] input = new int[] {5, 2, 10, 2, 4};
+        int value = 2;
+        int start = 2;
+        int finish = 4;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = 3;
+        assertThat(result, is(expect));
+    }
+    @Test
+    public void whenFind4() {
+        int[] input = new int[] {4, 3, 5, 1, 2, 10};
+        int value = 2;
+        int start = 4;
+        int finish = 10;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = 4;
+        assertThat(result, is(expect));
+    }
+    @Test
+    public void whenFind2() {
+        int[] input = new int[] {2, 3, 1, 4, 8, 10};
+        int value = 1;
+        int start = 2;
+        int finish = 8;
+        int result = FindLoop.indexOf(input, value, start, finish);
+        int expect = 2;
         assertThat(result, is(expect));
     }
 }
