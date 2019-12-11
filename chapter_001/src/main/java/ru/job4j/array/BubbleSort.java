@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class BubbleSort решение задачи 6.5. Создать программу для сортировки массива методом перестановки.
  *@author shcherbakov
- *@since 07.12.2019
- *@version 1.0.2
+ *@since 11.12.2019
+ *@version 1.0.3
  */
 
 public class BubbleSort {

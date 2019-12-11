@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class BubbleSortTest решение задачи 6.5. Создать программу для сортировки массива методом перестановки.
  *@author shcherbakov
- *@since 07.12.2019
- *@version 1.0.2
+ *@since 11.12.2019
+ *@version 1.0.3
  */
 
         import org.junit.Test;
@@ -15,8 +15,9 @@ public class BubbleSortTest {
     @Test
     public void whenSortArrayWithTenElementsThenSortedArray() {
         int[] array = {1, 5, 4, 2, 3, 1, 7, 8, 0, 5};
-        boolean flag = BubbleSort.bubbleSort(array);
-        assertThat(flag, is(true));
+        BubbleSort.bubbleSort(array);
+        int[] ex = {0, 1, 1, 2, 3, 4, 5, 5, 7,8};
+        assertThat(array, is(ex));
         }
     }
 
