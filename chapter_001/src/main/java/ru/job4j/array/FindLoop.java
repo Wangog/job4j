@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class FindLoop решение задачи 6.5. Поиск индекса в диапазоне.
  *@author shcherbakov
- *@since 07.12.2019
- *@version 1.0.0
+ *@since 29.02.2020
+ *@version 1.0.1
  */
 
 public class FindLoop {
