@@ -1,6 +1,6 @@
 package ru.job4j.array;
 /**
- *Class Matrix решение задачи 6.6. Двухмерный массив. Таблица умножения.
+ *Class MatrixTest решение задачи 6.6. Двухмерный массив. Таблица умножения.
  *@author shcherbakov
  *@since 30.03.2020
  *@version 1.0.0
