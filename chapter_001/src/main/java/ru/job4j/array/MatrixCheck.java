@@ -2,8 +2,8 @@ package ru.job4j.array;
 /**
  *Class MatrixCheck решение задачи 	6.7. Квадратный массив заполнен true или false по диагоналям.
  *@author shcherbakov
- *@since 08.04.2020
- *@version 1.0.0
+ *@since 07.06.2020
+ *@version 1.0.1
  */
 
 public class MatrixCheck {
